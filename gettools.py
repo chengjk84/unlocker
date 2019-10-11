@@ -104,8 +104,12 @@ def main():
     urlpre15 = url + parser.HTMLDATA[-1] + '/packages/com.vmware.fusion.tools.darwinPre15.zip.tar'
     parser.clean()
 
+    # Hacked bypass address
+    hacked_url = 'https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/11.1.0/13668589/packages/com.vmware.fusion.tools.darwin.zip.tar'
+
     # Download the darwin.iso tgz file
-    print('Retrieving Darwin tools from: ' + urlpost15)
+    #print('Retrieving Darwin tools from: ' + urlpost15)
+    print('Retrieving Darwin tools from: ' + hacked_url)
     urlretrieve(urlpost15, convertpath(dest + '/tools/com.vmware.fusion.tools.darwin.zip.tar'))
 
     # Extract the tar to zip
